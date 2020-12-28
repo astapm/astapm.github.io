@@ -1,0 +1,64 @@
+img {
+display: block;
+border-radius: 3px;
+width: auto;
+}
+
+.img_cover{
+float: left;
+width: 30%;
+border: none;
+}
+
+figure {
+/* margin: 0 auto; */
+width: 80 rem
+margin-top: 1em;
+margin-bottom: 1em;
+text-align: center;
+}
+
+figcaption {
+text-align: center;
+font-size: 85%;
+}
+
+figure img {
+margin: 0 auto;
+width: 80%;
+}
+
+@media (min-width: 940px) {
+
+figure {
+margin: 0 auto;
+margin-top: 1em;
+margin-bottom: 1em;
+text-align: center;
+}
+
+/*
+main, footer {
+padding: 2em 1em .5em 1em; }
+
+main article h1 { 
+padding: 1em 0;
+}
+
+main article,
+footer section,
+main+section,
+#header_block {
+max-width: 40rem;
+margin: 0 auto;
+}
+
+footer section {
+font-size: .65em;
+}
+
+footer, footer h3 {
+font-family: sans-serif;
+}
+*/
+}
