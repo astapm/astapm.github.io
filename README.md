@@ -1,4 +1,2 @@
 # astapm.github.io
-It's my home page
-
-Mikhail Astapchyk
+This is my homepage. Mikhail Astapchyk
