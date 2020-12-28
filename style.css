@@ -29,7 +29,8 @@ width: 80%;
 }
 
 @media (min-width: 940px) {
-
+/*
+  
 figure {
 margin: 0 auto;
 margin-top: 1em;
@@ -37,7 +38,6 @@ margin-bottom: 1em;
 text-align: center;
 }
 
-/*
 main, footer {
 padding: 2em 1em .5em 1em; }
 
