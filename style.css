@@ -1,6 +1,6 @@
 article {
+max-width: 40rem;
 margin: 0 auto;
-width: 80rem;
 }
 
 img {
@@ -34,6 +34,12 @@ width: 80%;
 }
 
 @media (min-width: 940px) {
+
+article {
+max-width: 40rem;
+margin: 0 auto;
+}
+
 figure img {
 margin: 0 auto;
 width: 96%; 
