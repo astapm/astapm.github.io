@@ -82,7 +82,7 @@
 <pre><code>ffmpeg -i video.mp4
 </code></pre>
 
-<p><figure><img src="../fig/soft/ffmpeg/fig1.png" alt="Рис 1. Вывод FFmpeg информации о данных файла" /><figcaption>Рис 1. Вывод FFmpeg информации о данных файла</figcaption></figure></p>
+<p><figure><img src="../fig/soft/fig1.png" alt="Рис 1. Вывод FFmpeg информации о данных файла" /><figcaption>Рис 1. Вывод FFmpeg информации о данных файла</figcaption></figure></p>
 
 <h2>VidCutter: графический интерфейс для FFmpeg</h2>
 
@@ -90,7 +90,7 @@
 
 <p>Примером такой очень простой графической оболочки является очень простенькая программа VidCutter. Она позволяет в графическом интерфейсе задействовать производить обрезку видеофайлов без перекодирования, то есть без потери качества.</p>
 
-<p><figure><img src="../fig/soft/ffmpeg/fig2.jpg" alt="Рис 2. VidCutter" /><figcaption>Рис 2. VidCutter</figcaption></figure></p>
+<p><figure><img src="../fig/soft/fig2.jpg" alt="Рис 2. VidCutter" /><figcaption>Рис 2. VidCutter</figcaption></figure></p>
 
 <p>Работа в этой программе состоит из одной операции — выделить начало и конец фрагмента и нажать кнопку обрезки видео. Но в большинстве случаев нужно больше, чем просто обрезать видеофайлы.</p>
 
@@ -251,7 +251,7 @@ Stream #0:2(eng): Audio ...
 Stream #0:3(rus): Subtitle …
 </code></pre>
 
-<p><figure><img src="../fig/soft/ffmpeg/fig3.png" alt="Рис 2. Вывод ffmpeg информации о потоках»" /><figcaption>Рис 2. Вывод ffmpeg информации о потоках»</figcaption></figure></p>
+<p><figure><img src="../fig/soft/fig3.png" alt="Рис 2. Вывод ffmpeg информации о потоках»" /><figcaption>Рис 2. Вывод ffmpeg информации о потоках»</figcaption></figure></p>
 
 <p>То есть 0 перед двоеточием означает, что это первый по порядку входной файл для ffmpeg — в примере выше это файл video.mkv. А номера после двоеточия означают номера внутренних потока этого файла. Для обработки конкретного потока опции <code>-map</code> нужно передать конкретный номер этого потока. Пример команды с опцией <code>-map</code>, которая демультиплексирует, то есть сохраняет одну из звуковых дорожек контейнера в отдельный файл:</p>
 
