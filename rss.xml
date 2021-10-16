@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+       <title>Домашняя страница Михаила Астапчика</title> 
+       <link>https://astapm.github.io/</link> 
+       <description>Домашняя страница Михаила Астапчика. Статьи и эссе на темы религии, искусства, литературы, науки, техники, досуга.</description>
+       <copyright>CC0 1.0 Universal 2020-21, Mikhail Astapchyk</copyright>
+       <pubDate>Sat, 16 Oct 2021 22:03:31 +0300</pubDate>
+       <lastBuildDate>Sat, 16 Oct 2021 22:13:31 +0300</lastBuildDate> 
+    </channel>
+    
+    <item>
+        <title>Мои наблюдения. Воробьиный сыч в Белоруссии</title>
+        <link>https://astapm.github.io/nature/vsych.html</link>
+        <description>Наблюдение воробьиного сыча в Белоруссии, в деревне Петровичи Смолевичского р-на...</description>
+        <pubDate>Sat, 16 Oct 2021 22:13:31 +0300</pubDate>
+    </item>
+    
+</rss> 
