@@ -1,127 +1,87 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../style.css" type="text/css"/>
+<meta name="robots" content="all" />
+<meta name="date" content='07-02-2015'>
+<meta name="description" content="Утилита ExifTool предназначена для просмотра и редактирования метаданных большого количества форматов файлов. В первую очередь используется для просмотра и редактирования параметров съемки в файлах цифровых фотографий. Лицензия: GPL." />
+<meta name="keywords" content="ExifTool, метаданные, редактирование, командная строка" />
+<meta name="author" content="Михаил Астапчик" />
+<meta name="copyright" content="CC0 1.0 Универсальная" />
+<link rel="stylesheet" href="./style.css" type="text/css"/>
+<link rel="alternate" type="application/rss+xml" title="Моя RSS-лента" href="rss.xml" />
+<link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" />
+<link rel="canonical" href="https://astapm.github.io/soft/exiftool.html" />
 <title>
-Домашняя страница. М. Астапчик - Обзоры Общественного ПО</title>
+ExifTool: читаем и редактируем метаданные файлов — Домашняя страница. М. Астапчик 
+</title>
 </head>
-  
 <body>
 <header>
-<p><a href="../index.html"><strong>Главная</strong></a> | 
-<a href="index.html"><strong>Оглавление книги</strong></a>
-</p>
+<p><a href="../index.html"><strong>Главная</strong></a> | <a href="index.html"><strong>Оглавление книги</strong></a></p>
 </header>
 <article>
-<h1> ExifTool: читаем и редактируем метаданные файлов</h1>
-
+<h1 id="exiftool-читаем-и-редактируем-метаданные-файлов">ExifTool: читаем и редактируем метаданные файлов</h1>
 <hr />
-
 <p><em>Утилита ExifTool предназначена для просмотра и редактирования метаданных большого количества форматов файлов. В первую очередь используется для просмотра и редактирования параметров съемки в файлах цифровых фотографий. Лицензия: GPL. Сайт: <a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">sno.phy.queensu.ca/~phil/exiftool/</a></em></p>
-
 <hr />
-
-<h2>Общие сведения</h2>
-
+<h2 id="общие-сведения">Общие сведения</h2>
 <p>Очень многие форматы файлов кроме основного содержания имеют в себе ещё и метаданные. Эти метаданные могут в каждом конкретном случае описывать различные дополнительные параметры содержимого файла.</p>
-
 <p>Наиболее известным стандартом метаданных, является стандарт EXIF <em>(англ. Exchangeable Image File Format)</em> — стандарт, позволяющий добавлять к различным типам файлов дополнительную информацию, описывающую условия и способы их получения, GPS координаты, авторство, комментарии и многое другое. Наиболее активно стандарт EXIF используется для фотоизображений, и практически каждый современный цифровой фотоаппарат записывает большое количество EXIF данных на каждый фотоснимок.</p>
-
-<p><figure><img src="../fig/soft/exif.jpg" alt="Рис. Кроме непосредственно изображения, цифровая фотография может включать и дополнительные метаданные " /><figcaption>Рис. Кроме непосредственно изображения, цифровая фотография может включать и дополнительные метаданные </figcaption></figure></p>
-
+<figure>
+<img src="../fig/soft/exif.jpg" alt="" /><figcaption>Рис. Кроме непосредственно изображения, цифровая фотография может включать и дополнительные метаданные</figcaption>
+</figure>
 <p>Другие форматы данных тоже могут иметь свои метаданные. Это видеофайлы, различные файлы документов — PDF, Djvu и т.д.</p>
-
 <p>Просмотреть и редактировать метаданные файлов можно при помощи большого количества утилит и программ. Особо отметим консольную утилиту ExifTool как наиболее универсальный и мощный инструмент для работы с метаданными файлов.</p>
-
 <p>Эта утилита работает из командной строки. Она существует для любых операционных системах — Linux, Windows, MacOS. Однако для неё есть и дополнения в виде приложения с графическим интерфейсом, как, например, Exiftoolgui для Windows.</p>
-
-<p><figure><img src="../fig/soft/exiftoolgui.png" alt="Рис. Exiftoolgui для Windows" /><figcaption>Рис. Exiftoolgui для Windows</figcaption></figure></p>
-
+<figure>
+<img src="../fig/soft/exiftoolgui.png" alt="" /><figcaption>Рис. Exiftoolgui для Windows</figcaption>
+</figure>
 <p>Ещё примером графической оболочки для ExifTool можно назвать утилиту PyExifToolGUI. (<a href="http://belursus.info/index.php?c=s-pyexiftoolgui">Читать подробнее о PyExifToolGUI</a>)</p>
-
-<p><figure><img src="../fig/soft/peg5.png" alt="Рис. PyExifToolGui" /><figcaption>Рис. PyExifToolGui</figcaption></figure></p>
-
+<figure>
+<img src="../fig/soft/peg5.png" alt="" /><figcaption>Рис. PyExifToolGui</figcaption>
+</figure>
 <p>Судя по названию, утилита ExifTool в первую очередь предназначена для работы с метаданными EXIF в цифровых фотографиях. Поддерживаются форматы фотоизображений: JPEG, TIFF, PNG, DNG, NEF, PEF, CRW, JP2, CR2, MRW, ARW, SR2, ORF, RAF, и другие.</p>
-
 <p>Но следует учитывать, что также утилита ExifTool может работать с метаданными в других типах файлов.</p>
-
 <ul>
 <li>видео и аудио: 3gp, AVI, MPG, MOV, WEBM, MP3, MP4, Ogg и др.;</li>
 <li>документы: PDF, Djvu, RTF, PPT, EPUB и др.;</li>
 <li>архивы и бинарные файлы: ZIP, DLL и др.</li>
 </ul>
-
 <p>При этом для одних файлов доступно как чтение метаданных, так и их редактирование. А для других типов файлов доступно только чтение. Полную информацию о многочисленных возможностях утилиты ExifTool почерпнуть, выполнив, после установки программы, команду</p>
-
-<pre><code>man exiftool
-</code></pre>
-
+<pre><code>man exiftool</code></pre>
 <p>В мануале будет таблица, где символами будет помечена возможность редактирования метаданных для такого типа файла. Символ (r) — метаданные только для чтения, (w) — метаданные можно с помощью ExifTool перезаписывать, (c) — метаданные можно создавать.</p>
-
-<p><figure><img src="../fig/soft/exiftool1.png" alt="Рис. ExifTool. Таблица редактируемости метаданных в различных типах файлов" /><figcaption>Рис. ExifTool. Таблица редактируемости метаданных в различных типах файлов</figcaption></figure></p>
-
-<h2>Некоторые примеры работы ExifTool с фотографиями</h2>
-
+<figure>
+<img src="../fig/soft/exiftool1.png" alt="" /><figcaption>Рис. ExifTool. Таблица редактируемости метаданных в различных типах файлов</figcaption>
+</figure>
+<h2 id="некоторые-примеры-работы-exiftool-с-фотографиями">Некоторые примеры работы ExifTool с фотографиями</h2>
 <p>Рассмотрим несколько опций этой консольной утилиты, необходимых для базовой работы с метаданными EXIF в файлах фотоизображений, так как этот формат метаданных используется практически во всех цифровых фотокамерах. Хотя ExifTool работает и с форматами метаданных XMP, IPTC.</p>
-
-<h3>Чтение и редактирование тегов</h3>
-
+<h3 id="чтение-и-редактирование-тегов">Чтение и редактирование тегов</h3>
 <p>Прочитать и отобразить все данные EXIF изображения.</p>
-
-<pre><code>exiftool FOTO.JPG
-</code></pre>
-
-<p><figure><img src="../fig/soft/exiftool2.png" alt="Рис. ExifTool" /><figcaption>Рис. ExifTool</figcaption></figure></p>
-
+<pre><code>exiftool FOTO.JPG</code></pre>
+<figure>
+<img src="../fig/soft/exiftool2.png" alt="" /><figcaption>Рис. ExifTool</figcaption>
+</figure>
 <p>Прочитать какой-либо отдельный тег в метаданных изображения — например, информацию тега ISO.</p>
-
-<pre><code>exiftool -ISO FOTO.JPG
-</code></pre>
-
+<pre><code>exiftool -ISO FOTO.JPG</code></pre>
 <p>Показать теги, в которые возможно редактировать.</p>
-
-<pre><code>exiftool -listw FOTO.JPG
-</code></pre>
-
+<pre><code>exiftool -listw FOTO.JPG</code></pre>
 <p>Запись значения конкретного тега EXIF в файл изображения делается через символ присваивания <code>=</code>.</p>
-
-<pre><code>exiftool -ISO='200' FOTO.JPG
-</code></pre>
-
+<pre><code>exiftool -ISO=&#39;200&#39; FOTO.JPG</code></pre>
 <p>Удаление значения конкретного тега EXIF в файле изображения делается через присваивания пустого значения.</p>
-
-<pre><code>exiftool -ISO='' FOTO.JPG
-</code></pre>
-
+<pre><code>exiftool -ISO=&#39;&#39; FOTO.JPG</code></pre>
 <p>Естественно консольная утилита exiftool хороша для пакетной обработки файлов, когда один или несколько одинаковых тегов нужно записать или удалить во множестве изображений. Ниже команда запишет значение ISO во все файлы с расширением jpg в текущей папке. Символ <code>*</code> в имени файла — шаблон для любого имени.</p>
-
-<pre><code>exiftool -ISO='200' *.JPG
-</code></pre>
-
+<pre><code>exiftool -ISO=&#39;200&#39; *.JPG</code></pre>
 <p>При редактировании тегов утилита создаёт рядом с новым файлом файл-оригинал с суффиксом "_original". Если этого не требуется, нужно использовать дополнительную опцию <code>-overwrite_original</code>.</p>
-
-<pre><code>exiftool -ISO='200' -overwrite_original *.JPG
-</code></pre>
-
-<p><em>Примечание: если же эту опцию забыли написать и ExifTool создал много архивных копий с суфиксом "_original", то удалить эти копии можно выполнив в консоли для систем Linux в текущем каталоге несложный однострочный скрипт:</em></p>
-
-<pre><code>for f in *_original ; do rm $f; done
-</code></pre>
-
+<pre><code>exiftool -ISO=&#39;200&#39; -overwrite_original *.JPG</code></pre>
+<p><em>Примечание: если же эту опцию забыли написать и ExifTool создал много архивных копий с суффиксом "_original", то удалить эти копии можно выполнив в консоли для систем Linux в текущем каталоге несложный одно-строчный скрипт:</em></p>
+<pre><code>for f in *_original ; do rm $f; done</code></pre>
 <p>Можно скопировать тэги из одного файла в другой. Ниже пример команды, когда тэги EXIF будут скопированы из файла FOTO.DNG в FOTO.JPG</p>
-
-<pre><code>exiftool -TagsFromFile FOTO.DNG FOTO.JPG
-</code></pre>
-
+<pre><code>exiftool -TagsFromFile FOTO.DNG FOTO.JPG</code></pre>
 <p>Так возможно копирование тегов для нескольких файлов в папке (оригинальные файлы и производные лежат рядом).</p>
-
-<pre><code>exiftool -TagsFromFile %d%f.DNG -r -ext JPG путь_к_каталогу
-</code></pre>
-
+<pre><code>exiftool -TagsFromFile %d%f.DNG -r -ext JPG путь_к_каталогу</code></pre>
 <p><strong>Название и пояснения к наиболее популярным EXIF-тегам</strong></p>
-
 <ul>
 <li>Make — производитель камеры</li>
 <li>Model — модель камеры</li>
@@ -135,71 +95,41 @@
 <li>Copyright — копирайт</li>
 <li>UserComment — комментарии пользователя к файлу</li>
 </ul>
-
 <p>Чтобы не вводить каждый раз какой-либо набор тегов, их можно записать в отдельный текстовой файл. Например, набор общих тегов для любых оцифрованных снимков с фотоаппарата "Смена 8М" можно записать в виде такого текстового файла с названием, например lens8M.txt.</p>
-
 <pre><code>-n
 -EXIF:LensModel=LOMO T-43 (Triplet) 40mm f/4
 -EXIF:Model=Smena 8M
 -EXIF:FocalLength=40
--EXIF:MaxApertureValue=4
-</code></pre>
-
+-EXIF:MaxApertureValue=4</code></pre>
 <p>А потом просто вызывать в качестве параметра опции <code>-@</code>.</p>
-
-<pre><code>exiftool -@ lens8M.txt *.JPG
-</code></pre>
-
-<h3>Геотеги, прочитать и редактировать</h3>
-
+<pre><code>exiftool -@ lens8M.txt *.JPG</code></pre>
+<h3 id="геотеги-прочитать-и-редактировать">Геотеги, прочитать и редактировать</h3>
 <p>Exiftool — самый простой и доступный способ добавить метаданные о географическом расположении (геотеги) как в файлы цифровых фотографий, так и в файлы видео.</p>
-
 <p>Удалить конкретные геотеги через пустое значение. Например, правильным считается при публикации фотографий в интернете удалить из них геотэги. Примечание: между двумя одинарными кавычками <code>-geotag=''</code> должно быть пустое значение, а не пробел.</p>
-
-<pre><code>exiftool -geotag='' FOTO.JPG
-</code></pre>
-
+<pre><code>exiftool -geotag=&#39;&#39; FOTO.JPG</code></pre>
 <p>И наоборот, например, установить долготу и широту в метаданных цифрового фотоснимка можно с помощью параметров <code>-GPSLongitude</code> и <code>-GPSLatitude</code> соответственно. Например</p>
-
-<pre><code>exiftool -GPSLongitude="27,46"  -GPSLatitude="53,89" FOTO.JPG
-</code></pre>
-
+<pre><code>exiftool -GPSLongitude=&quot;27,46&quot;  -GPSLatitude=&quot;53,89&quot; FOTO.JPG</code></pre>
 <p>ExifTool может работать с GPS-треками, в результате чего можно синхронизировать координаты GPS-трека и время создания фотоснимка. То есть, если во время фотосъёмок создавался GPS-трек, то из него с помощью ExifTool можно автоматически извлечь гео-координаты, соответствующие времени создания снимка, и записать их в метаданные фотографии.</p>
-
-<pre><code>exiftool -geotag track.gpx *.JPG
-</code></pre>
-
-<h3>Манипуляции с датой и временем</h3>
-
+<pre><code>exiftool -geotag track.gpx *.JPG</code></pre>
+<h3 id="манипуляции-с-датой-и-временем">Манипуляции с датой и временем</h3>
 <p>Неправильно выставленное в фотокамере время - ещё одна распространённая досадная оплошность, которую ExifTool поможет исправить. Особенно это неприятно при синхронизации GPS-треков и фотографий. Потому что синхронизация с координатами GPS-трека происходит по времени создания фотографии, и отставание-спешка фотокамеры даже на одну минуту может привести к большим ошибкам координат места съёмки в метаданных цифрового фотоснимка. Исправить ситуацию можно с помощью специального формата <code>год:месяц:день часы:минуты:секунды</code> для опции <code>-DateTimeOriginal</code>, который несложно понять на следующем примере. Допустим, нам надо сделать фотографию старше «старше» на один год и один час.</p>
-
-<pre><code>exiftool "-DateTimeOriginal-=1:0:0 1:00:00" FOTO.JPG
-</code></pre>
-
-<p>Обратите внимание на знак уменьшения <code>-</code> перед знаком <code>=</code>. Если фотографию нужно сделать «моложе» по времени создания, то ставится знак  <code>+</code>.</p>
-
-<p>Можно изменить сразу три временны́х тега — DateTimeOriginal, CreateDate и ModifyDate. Для этого следует использовать опцию <code>-AllDates</code>. </p>
-
+<pre><code>exiftool &quot;-DateTimeOriginal-=1:0:0 1:00:00&quot; FOTO.JPG</code></pre>
+<p>Обратите внимание на знак уменьшения <code>-</code> перед знаком <code>=</code>. Если фотографию нужно сделать «моложе» по времени создания, то ставится знак <code>+</code>.</p>
+<p>Можно изменить сразу три временны́х тега — DateTimeOriginal, CreateDate и ModifyDate. Для этого следует использовать опцию <code>-AllDates</code>.</p>
 <p>Можно осуществить переименование имён файлов изображений на основе даты из EXIF с удалением оригинального имени файла.</p>
-
-<pre><code>exiftool -d %Y%m%d-%H%M%S.%%e "-filename&lt;CreateDate" *.JPG
-</code></pre>
-
+<pre><code>exiftool -d %Y%m%d-%H%M%S.%%e &quot;-filename&lt;CreateDate&quot; *.JPG</code></pre>
 <p>Переименование на основе даты создания без удаления начального имени файла.</p>
-
-<pre><code>exiftool -d %Y%m%d-%H%M%S%%-c-%%f.%%e "-filename&lt;CreateDate" *.JPG
-</code></pre>
-
+<pre><code>exiftool -d %Y%m%d-%H%M%S%%-c-%%f.%%e &quot;-filename&lt;CreateDate&quot; *.JPG</code></pre>
 <p>В ходе манипуляций ExifTool поменяет дату модификации файла. Восстановить оригинальную дату оригинала:</p>
-
-<pre><code> exiftool '-filemodifydate&lt;datetimeoriginal' FOTO.JPG
-</code></pre>
-
+<pre><code> exiftool &#39;-filemodifydate&lt;datetimeoriginal&#39; FOTO.JPG</code></pre>
 <p>07-02-2015</p>
-
-</article>
-  
 <hr />
 <p>2020. CC BY-SA. I'm hosted with GitHub Pages.</p>
+07-02-2015
+</article>
+<footer>
+<hr />
+<p>2020-21. CC Zero. Астапчик Михаил. I'm hosted with GitHub Pages.</p>
+</footer>
 </body>
 </html>

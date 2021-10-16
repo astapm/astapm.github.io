@@ -1,43 +1,38 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../style.css" type="text/css"/>
+<meta name="robots" content="all" />
+<meta name="date" content='10-02-2014'>
+<meta name="description" content="Youtube-dl — инструменты для скачивания видео со специализированных видеосервисов. ОС: UNIX-like, Windows, Mac OSX. Лицензия: public domain." />
+<meta name="keywords" content="Youtube-dl, скачивание видео, Youtube, общественное ПО" />
+<meta name="author" content="Михаил Астапчик" />
+<meta name="copyright" content="CC0 1.0 Универсальная" />
+<link rel="stylesheet" href="./style.css" type="text/css"/>
+<link rel="alternate" type="application/rss+xml" title="Моя RSS-лента" href="rss.xml" />
+<link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" />
+<link rel="canonical" href="https://astapm.github.io/soft/youtubedll.html" />
 <title>
-Домашняя страница. М. Астапчик - Обзоры Общественного ПО</title>
+Youtube-dl: качай видео с видеосервисов — Домашняя страница. М. Астапчик 
+</title>
 </head>
-  
 <body>
 <header>
-<p><a href="../index.html"><strong>Главная</strong></a> | 
-<a href="index.html"><strong>Оглавление книги</strong></a>
-</p>
+<p><a href="../index.html"><strong>Главная</strong></a> | <a href="index.html"><strong>Оглавление книги</strong></a></p>
 </header>
 <article>
-<h1>Youtube-dl: качай видео с видеосервисов</h1>
-
+<h1 id="youtube-dl-качай-видео-с-видеосервисов">Youtube-dl: качай видео с видеосервисов</h1>
 <hr />
-
 <p><em>Youtube-dl — инструменты для скачивания видео со специализированных видеосервисов. ОС: UNIX-like, Windows, Mac OSX. Лицензия: public domain. Сайт: <a href="http://rg3.github.io/youtube-dl/">rg3.github.io/youtube-dl/</a></em></p>
-
 <hr />
-
 <p>Для скачивания видео со специализированных видеосервисов существует множество разных веб-сервисов, которые помогают скачивать видео с Youtube, как, например, сервис savefrom.net. Однако у меня видео через этот сервис загружается медленно, и я использую специальные утилиты, которых существует тоже немало.</p>
-
 <p>Из таких утилит можно смело рекомендовать программу youtube-dl, несмотря на то, что она консольная. Программа имеется во многих репозиториях дистрибутивов Linux. Имеется её версия и для Windows (4,5МБ). Программа распространяется под открытой лицензией и бесплатна.</p>
-
 <p>Youtube-dl — утилита для загрузки потокового видео с видеохостингов, таких как Youtube. Поддерживается также большое количество других видеохостингов: FaceBook, Instagram, MTV, NBA, NBCNews, Rutube, Space, Statigram, Steam, Vice, Vine, vk.com и другие.</p>
-
 <p>Эта маленькая утилита обладает весьма внушительным функционалом. Например, можно указать формат и качество сохраняемого файла, можно извлечь аудиодорожку, есть возможность скачать плейлист, имеется поддержка прокси.</p>
-
 <p>Запускается и работает утилита очень просто из командной строки.</p>
-
-<pre><code>$ youtube-dl http://www.ссылка-на-видео
-</code></pre>
-
+<pre><code>$ youtube-dl http://www.ссылка-на-видео</code></pre>
 <p>В результате по умолчанию скачается видео в самом качественном формате. Но можно выбрать и другие возможные форматы. Для этого сначала нужно получить при помощи опции -F список всех возможных вариантов ролика.</p>
-
 <pre><code>$ youtube-dl -F http://www.youtube.com/watch?v=6hcEJNoH1ck  
 
 [youtube] 6hcEJNoH1ck: Downloading video webpage  
@@ -56,11 +51,8 @@ Available formats:
 
 5   :   flv [240x400]  
 
-17  :   mp4 [144x176]
-</code></pre>
-
+17  :   mp4 [144x176]</code></pre>
 <p>После чего при помощи параметра -f с номером нужного формата загружаем видеоролик.</p>
-
 <pre><code>$ youtube-dl -f 5 http://www.youtube.com/watch?v=6hcEJNoH1ck  
 
 [youtube] Setting language  
@@ -73,21 +65,20 @@ Available formats:
 
 [download] Destination: Прохождение мода Апокалипсис - Финал - Полная Зачистка Зоны.flv  
 
-[download] 100.0% of 117.46MiB at 216.18KiB/s ETA 00:00
-</code></pre>
-
+[download] 100.0% of 117.46MiB at 216.18KiB/s ETA 00:00</code></pre>
 <p>Для скачивания всего плейлиста Google Youtube соответственно для youtube-dl передаётся ссылка на плейлист.</p>
-
 <p>Некоторые дополнительные опции youtube-dl:</p>
-
 <p><code>-с</code> — продолжить с места разъединения. (Если закрыть закачку, а потом войти в тот же каталог и выполнить ту же команду, она начнётся заново);<br />
 <code>-i</code> — игнорировать ошибки;<br />
-<code>-t</code> — писать название записи в название файла. </p>
-
+<code>-t</code> — писать название записи в название файла.</p>
 <p>10-02-2014</p>
-</article>
-
 <hr />
 <p>2020. CC BY-SA. I'm hosted with GitHub Pages.</p>
+10-02-2014
+</article>
+<footer>
+<hr />
+<p>2020-21. CC Zero. Астапчик Михаил. I'm hosted with GitHub Pages.</p>
+</footer>
 </body>
 </html>

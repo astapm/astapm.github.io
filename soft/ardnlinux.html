@@ -1,66 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../style.css" type="text/css"/>
+<meta name="robots" content="all" />
+<meta name="date" content='21-03-2015'>
+<meta name="description" content="В данной статье на примере DCcduino Uno опишем особенности подключения китайских клонов в системах GNU/Linux. Предварительно в качестве лирического отступления скажем несколько слов о феномене Arduino." />
+<meta name="keywords" content="Arduino, DCcduino, Linux, CH340/341" />
+<meta name="author" content="Михаил Астапчик" />
+<meta name="copyright" content="CC0 1.0 Универсальная" />
+<link rel="stylesheet" href="./style.css" type="text/css"/>
+<link rel="alternate" type="application/rss+xml" title="Моя RSS-лента" href="rss.xml" />
+<link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" />
+<link rel="canonical" href="https://astapm.github.io/soft/ardnlinux.html" />
 <title>
-Домашняя страница. М. Астапчик - Обзоры Общественного ПО</title>
+Как подключить китайский клон Arduino DCcduino в Ubuntu Linux — Домашняя страница. М. Астапчик 
+</title>
 </head>
-  
 <body>
 <header>
-<p><a href="../index.html"><strong>Главная</strong></a> | 
-<a href="index.html"><strong>Оглавление книги</strong></a>
-</p>
+<p><a href="../index.html"><strong>Главная</strong></a> | <a href="index.html"><strong>Оглавление книги</strong></a></p>
 </header>
 <article>
-<h1>Как подключить китайский клон Arduino DCcduino в Ubuntu Linux</h1>
-
+<h1 id="как-подключить-китайский-клон-arduino-dccduino-в-ubuntu-linux">Как подключить китайский клон Arduino DCcduino в Ubuntu Linux</h1>
 <hr />
-
 <p><em>В данной статье на примере DCcduino Uno опишем особенности подключения китайских клонов в системах GNU/Linux. Предварительно в качестве лирического отступления скажем несколько слов о феномене Arduino.</em></p>
-
 <hr />
-
-<h2>Oh, cherie, cherie! Made in Italy</h2>
-
+<h2 id="oh-cherie-cherie-made-in-italy">Oh, cherie, cherie! Made in Italy</h2>
 <p>Arduino — семейство популярных электронных плат для любителей электроники на основе семейства микроконтроллеров Atmel AVR ATmega. Отцами-разработчиками этого проекта являются итальянцы Массимо Банци (Massimo Banzi) и Джанлука Мартино (Gianluca Martino). Равно как и основным производителем этих плат под официальной торговой маркой является итальянская фирма Arduino SRL.</p>
-
-<p><figure><img src="../fig/soft/ardnlinux/arduinos.jpg" alt="Рис. Семейство Arduino" /><figcaption>Рис. Семейство Arduino</figcaption></figure></p>
-
+<figure>
+<img src="../fig/soft/ardnlinux/arduinos.jpg" alt="" /><figcaption>Рис. Семейство Arduino</figcaption>
+</figure>
 <p>Эти платы позволяют изучать микроконтроллеры даже школьнику, создавать вполне рабочие электронные устройства для домашних нужд или даже — прототипы для промышленных задач. Поэтому Arduino полюбили как новички и любители электроники, так и мастера-электронщики. Arduino имеет удобный способ программирования. Для этих плат написано много программ, создана большая серия плат расширений и имеется много различной периферии, начиная с выключателей и заканчивая компонентами робототехники.</p>
-
 <p>С другой стороны ардуиномания не вызывает большого восторга у многих профессиональных микроконтроллёрщиков, и они не приветствуют ардуинозависимость большого числа любителей электроники. Суровые микроконтролёрщики не одобряют тот факт, что программирование микроконтролёров с приходом Arduino становится таким же лёгким как итальянская поп-музыка.</p>
-
-<p><a href="fig/ardnlinux/chery.webm"><figure><img src="../fig/soft/ardnlinux/chery-cover.jpg" alt="Видео приложение. Программирование Arduino лёгкое как итальянский поп" /><figcaption>Видео приложение. Программирование Arduino лёгкое как итальянский поп</figcaption></figure></a></p>
-
+<p><a href="fig/ardnlinux/chery.webm"></a></p>
+<figure>
+<img src="../fig/soft/ardnlinux/chery-cover.jpg" alt="" /><figcaption>Видео приложение. Программирование Arduino лёгкое как итальянский поп</figcaption>
+</figure>
 <p>Однако, надо обязательно сказать, феномен Arduino лежит гораздо глубже чем проблематика микроэлектроники и встраиваемых систем и затрагивает компьютерный мир в целом. Arduino — это ведь не только контроллер, но и практически полноценный компьютер. Эдакий велосипед по сравнению, например, с ПК. И Arduino — это также результат культурно-технического развития компьютерной техники в целом.</p>
-
 <p>Но этот культурно-технический аспект — тема другой статьи. Мы же рассмотрим исключительно практический вопрос: подключение китайских клонов Arduino в системах GNU/Linux. Потому что в силу открытой архитектуры этих плат выпускать их клоны может кто-угодно. Особенно преуспели в клонировании Arduino наши китайские товарищи. И в китайских интернет-магазинах можно отыскать большое количество различных «дуино»: Freduino, Freeduino, DCcduino, Xdruino, Funduino и др.</p>
-
 <p>Главной особенностью этих китайских плат является, естественно, цена. Так, например, DCcduino Uno — аналог официальной модели Arduino Uno — стоит где-то четыре доллара с копейками, что в раза три дешевле, чем официальная модель.</p>
-
-<p><figure><img src="../fig/soft/ardnlinux/dccduino.jpg" alt="Рис. DCcduino Uno" /><figcaption>Рис. DCcduino Uno</figcaption></figure></p>
-
-<h2>Подключение DCcduino Uno в Ubuntu Linux</h2>
-
-<p>По своим характеристикам на уровне программ и интерфейсов ввода-вывода для периферии китайские клоны идентичны официальным версиям Arduino. Однако есть и нюансы. В первую очередь — это подключение китайской «дуины» к компьютеру. Например, официальные драйверы, которые идут в комплекте с официальной средой разработки Arduino IDE могут не заработать вс китайскими платами. Рассмотрим это на примере DCcduino Uno.</p>
-
+<figure>
+<img src="../fig/soft/ardnlinux/dccduino.jpg" alt="" /><figcaption>Рис. DCcduino Uno</figcaption>
+</figure>
+<h2 id="подключение-dccduino-uno-в-ubuntu-linux">Подключение DCcduino Uno в Ubuntu Linux</h2>
+<p>По своим характеристикам на уровне программ и интерфейсов ввода-вывода для периферии китайские клоны идентичны официальным версиям Arduino. Однако есть и нюансы. В первую очередь — это подключение китайской «дуины» к компьютеру. Например, официальные драйверы, которые идут в комплекте с официальной средой разработки Arduino IDE могут не заработать с китайскими платами. Рассмотрим это на примере DCcduino Uno.</p>
 <p>В официальных платах Arduino для связи с персональным компьютером и средой программирования Arduino IDE используется чип Atmega8U2, запрограммированный на преобразование USB - Serial. Также использовался чип чип FT232RL.</p>
-
 <p>А в DCcduino Uno для записи подпрограммы в память контроллера используется в качестве конвертора USB-Serial чип CH340/41. Этот чип также часто используется в недорогих китайских программаторах.</p>
-
-<p><figure><img src="../fig/soft/ardnlinux/ch340.jpg" alt="Рис. CH340" /><figcaption>Рис. CH340</figcaption></figure></p>
-
+<figure>
+<img src="../fig/soft/ardnlinux/ch340.jpg" alt="" /><figcaption>Рис. CH340</figcaption>
+</figure>
 <p>Соответственно для пользователей Windows, чтобы заработала их плата DCcduino Uno, нужно искать драйвер именно для CH340/341. Для пользователей Linux скачивать ничего, скорее всего, не придётся, так как драйвер CH340/341 входит в состав драйверов ядра. (<a href="https://github.com/torvalds/linux/blob/master/drivers/usb/serial/ch341.c">Исходный код модуля ядра ch341.c для микросхемы CH341</a>) Но нужно сделать кое-какие манипуляции в системе. Хотя возможны случаи, когда этот драйвер не собран для какой-то конкретной системы.</p>
-
 <p>Итак вы подсоединили DCcduino Uno к компьютеру с Ubuntu Linux (всё сказанное верно и для других дистрибутивов), скачали и установили согласно инструкции Arduino IDE для Linux c официального сайта arduino.cc, и пытаетесь из этой среды запустить первый какой-нибудь простой скетч для проверки работоспособности вашей DCcduino Uno. Но ничего не получается и Arduino IDE выдаёт ошибку.</p>
-
-<p><figure><img src="../fig/soft/ardnlinux/ide.png" alt="Рис. Arduino IDE ERROR" /><figcaption>Рис. Arduino IDE ERROR</figcaption></figure></p>
-
+<figure>
+<img src="../fig/soft/ardnlinux/ide.png" alt="" /><figcaption>Рис. Arduino IDE ERROR</figcaption>
+</figure>
 <p>Дело вот в чём. Ubuntu Linux определяет DCcduino Uno как устройство ttyUSB*. Обычно это <code>ttyUSB0</code>. Что можно узнать через вывод команды dmesg.</p>
-
 <pre><code>$ dmesg
 
 ....
@@ -69,31 +64,25 @@
 [19327.012471] usb 3-2: New USB device strings: Mfr=0, Product=2, SerialNumber=0
 [19327.012474] usb 3-2: Product: USB2.0-Serial
 [19327.013035] ch341 3-2:1.0: ch341-uart converter detected
-[19327.014132] usb 3-2: ch341-uart converter now attached to ttyUSB0
-</code></pre>
-
+[19327.014132] usb 3-2: ch341-uart converter now attached to ttyUSB0</code></pre>
 <p>То есть, говоря по-научному, у нас появился в системе интерфейс <code>/dev/ttyUSB0</code>. Но чтобы с ним работать, нужны права доступа. Обычно читать и писать на устройство <code>/dev/ttyUSB0</code> имеет пользователь <code>root</code> и пользователи группы <code>dialout</code>.</p>
-
 <pre><code>$ ls -l /dev/ttyUSB0
-crw-rw---- 1 root dialout Mar 21 01:04 /dev/ttyUSB0
-</code></pre>
-
+crw-rw---- 1 root dialout Mar 21 01:04 /dev/ttyUSB0</code></pre>
 <p>Работать с правами суперпользователя — этого нужно избегать. Лучше занести себя в пользователи группы <code>dialout</code>. Для этого можно выполнить следующую команду (обратите внимание, команда <code>whoami</code> в обратных кавычках):</p>
-
-<pre><code>sudo usermod -a -G dialout `whoami`
-</code></pre>
-
+<pre><code>sudo usermod -a -G dialout `whoami`</code></pre>
 <p>После чего нужно перелогиниться. И дальше запускаем Arduino IDE, в меню «Инструменты — Порт» ставим галочку напротив /dev/ttyUSB0. Теперь мы можем загружать из Arduino IDE в DCcduino Uno любые скетчи.</p>
-
-<p><figure><img src="../fig/soft/ardnlinux/work-dccduino.gif" alt="Рис. Работающая DCcduino Uno" /><figcaption>Рис. Работающая DCcduino Uno</figcaption></figure></p>
-
+<figure>
+<img src="../fig/soft/ardnlinux/work-dccduino.gif" alt="" /><figcaption>Рис. Работающая DCcduino Uno</figcaption>
+</figure>
 <p>Такой вот тривиальный процесс подключения китайского клона Arduino в Ubuntu Linux. Тем не менее, многие начинающие испытывают затруднения.</p>
-
 <p>21-03-2015</p>
-
-</article>
-  
 <hr />
 <p>2020. CC BY-SA. I'm hosted with GitHub Pages.</p>
+21-03-2015
+</article>
+<footer>
+<hr />
+<p>2020-21. CC Zero. Астапчик Михаил. I'm hosted with GitHub Pages.</p>
+</footer>
 </body>
 </html>
