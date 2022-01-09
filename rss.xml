@@ -1,46 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" ?> 
+
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-       <title>Домашняя страница Михаила Астапчика</title> 
-       <link>https://astapm.github.io/</link> 
-       <description>Домашняя страница Михаила Астапчика. Статьи и эссе на темы религии, искусства, литературы, науки, техники, досуга.</description>
+       <title>Домашняя страница Михаила Астапчика</title>
+       <link>https://astapm.github.io/</link>
+       <description>Домашняя страница Михаила Астапчика. Статьи и эссе на темы религии, искусства, литературы, науки, техники, досуга</description>
        <copyright>CC0 1.0 Universal 2020-21, Mikhail Astapchyk</copyright>
-       <pubDate>Sun, 21 Nov 2021 21:06:43 +0300</pubDate>
-       <lastBuildDate>Sun, 21 Nov 2021 21:06:43 +0300</lastBuildDate>
-       
+       <pubDate>Sun, 09 Jan 2022 21:05:45 +0300</pubDate>
+       <lastBuildDate>Sun, 09 Jan 2022 21:05:45 +0300</lastBuildDate>
     <item>
-        <title>Мои наблюдения. Белая цапля в Белоруссии</title>
+        <title>Освобождение Белоруссии 1943-1944 гг.</title>
+        <link>https://astapm.github.io/vhistory/belorussia.html</link>
+        <description>Конспективно об этапах освобождения Белоруссии в 1943-1944 гг. начиная с организации Вермахтом оборонительного Восточного вала и заканчивая крупнейшей битвой за всю историю человечества --- операцией «Багратион».</description>
+        <pubDate>Вс, 09 янв 2022 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+        <title>Природоведение</title>
         <link>https://astapm.github.io/nature/ardea.html</link>
         <description>Наблюдение белой цапли Ardea alba в д. Петровичи РБ осенью 2021 года</description>
-        <pubDate>Sun, 21 Nov 2021 21:06:43 +0300</pubDate>
+        <pubDate>Вс, 21 ноя 2021 00:00:00 +0300</pubDate>
     </item>
-       
     <item>
-        <title>Военная история. Факторы 22 июня 1941-го года</title>
+        <title>Факторы 22 июня 1941-го года</title>
         <link>https://astapm.github.io/vhistory/june1941.html</link>
-        <description>Конспективно о скрытом предательстве в советском государстве как основном факторе начала Великой Отечественной войны, положившись на который гитлеровская Германия сначала смогла добиться успеха, но и предопределившего дальнейший крах Вермахта и III-го Рейха...</description>
-        <pubDate>Sat, 13 Nov 2021 23:42:02 +0300</pubDate>
+        <description>Конспективно о скрытом предательстве в советском государстве как основном факторе начала Великой Отечественной войны, положившись на который гитлеровская Германия сначала смогла добиться успеха, но и предопределившего дальнейший крах Вермахта и III-го Рейха</description>
+        <pubDate>Сб, 13 ноя 2021 00:00:00 +0300</pubDate>
     </item>
-       
     <item>
-        <title>Мои наблюдения. Белая радуга (Sea-dog)</title>
+        <title>Мои наблюдения. Белая радуга</title>
         <link>https://astapm.github.io/nature/wrainbow.html</link>
-        <description>Наблюдение белой радуги в р-не д. Петровичи, Белоруссия. Видео...</description>
-        <pubDate>Sun, 24 Oct 2021 20:53:06 +0300</pubDate>
+        <description>Наблюдение белой радуги в р-не д. Петровичи, Белоруссия</description>
+        <pubDate>Вс, 24 окт 2021 00:00:00 +0300</pubDate>
     </item>
-       
     <item>
         <title>Военная история</title>
         <link>https://astapm.github.io/vhistory/index.html</link>
-        <description>Книга эссе о военной истории. В основном об истории Великой Отечественной войны...</description>
-        <pubDate>Tue, 19 Oct 2021 20:14:56 +0300</pubDate>
-    </item>
-
-    <item>
-        <title>Мои наблюдения. Воробьиный сыч в Белоруссии</title>
-        <link>https://astapm.github.io/nature/vsych.html</link>
-        <description>Наблюдение воробьиного сыча в Белоруссии, в деревне Петровичи Смолевичского р-на...</description>
-        <pubDate>Sat, 16 Oct 2021 22:13:31 +0300</pubDate>
+        <description>Книга эссе о военной истории. В основном о истории Великой Отечественной войны.</description>
+        <pubDate>Вт, 19 окт 2021 00:00:00 +0300</pubDate>
     </item>
     </channel>
-</rss> 
+</rss>
