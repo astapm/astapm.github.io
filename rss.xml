@@ -5,8 +5,14 @@
        <link>https://astapm.github.io/</link>
        <description>Домашняя страница Михаила Астапчика. Статьи и эссе на темы религии, искусства, литературы, науки, техники, досуга</description>
        <copyright>CC0 1.0 Universal 2020-21, Mikhail Astapchyk</copyright>
-       <pubDate>Mon, 10 Jan 2022 22:12:14 +0300</pubDate>
-       <lastBuildDate>Mon, 10 Jan 2022 22:12:14 +0300</lastBuildDate>
+       <pubDate>Wed, 26 Jan 2022 21:27:24 +0300</pubDate>
+       <lastBuildDate>Wed, 26 Jan 2022 21:27:24 +0300</lastBuildDate>
+    <item>
+        <title>История ядерного оружия</title>
+        <link>https://astapm.github.io/vhistory/nuclear.html</link>
+        <description>Конспективно об истории ядерного оружия</description>
+        <pubDate>Wed, 26 Jan 2022 00:00:00 +0300</pubDate>
+    </item>
     <item>
         <title>Освобождение Белоруссии 1943-1944 гг.</title>
         <link>https://astapm.github.io/vhistory/belorussia.html</link>
@@ -30,12 +36,6 @@
         <link>https://astapm.github.io/nature/wrainbow.html</link>
         <description>Наблюдение белой радуги в р-не д. Петровичи, Белоруссия</description>
         <pubDate>Sun, 24 Oct 2021 00:00:00 +0300</pubDate>
-    </item>
-    <item>
-        <title>Военная история</title>
-        <link>https://astapm.github.io/vhistory/index.html</link>
-        <description>Книга эссе о военной истории. В основном о истории Великой Отечественной войны.</description>
-        <pubDate>Tue, 19 Oct 2021 00:00:00 +0300</pubDate>
     </item>
     </channel>
 </rss>
