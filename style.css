@@ -60,7 +60,7 @@ footer p {
  text-align: right; 
   }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
 
 article {
   width: 100%;
