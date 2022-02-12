@@ -5,8 +5,14 @@
        <link>https://astapm.github.io/</link>
        <description>Домашняя страница Михаила Астапчика. Статьи и эссе на темы религии, искусства, литературы, науки, техники, досуга</description>
        <copyright>CC0 1.0 Universal 2020-21, Mikhail Astapchyk</copyright>
-       <pubDate>Wed, 26 Jan 2022 21:27:24 +0300</pubDate>
-       <lastBuildDate>Wed, 26 Jan 2022 21:27:24 +0300</lastBuildDate>
+       <pubDate>Sat, 12 Feb 2022 22:26:15 +0300</pubDate>
+       <lastBuildDate>Sat, 12 Feb 2022 22:26:15 +0300</lastBuildDate>
+    <item>
+        <title>Мы не наблюдаем эволюцию коронавируса</title>
+        <link>https://astapm.github.io/nature/corona.html</link>
+        <description>Изменения возбудителя инфекционного заболевания вируса SARS-CoV-2 семейства Коронавирусов не дают повода говорить о том, что мы наблюдаем эволюцию этого вируса. На примере этого микроорганизма мы наблюдаем типичную внутривидовую изменчивость.</description>
+        <pubDate>Sat, 12 Feb 2022 00:00:00 +0300</pubDate>
+    </item>
     <item>
         <title>История ядерного оружия</title>
         <link>https://astapm.github.io/vhistory/nuclear.html</link>
@@ -30,12 +36,6 @@
         <link>https://astapm.github.io/vhistory/june1941.html</link>
         <description>Конспективно о скрытом предательстве в советском государстве как основном факторе начала Великой Отечественной войны, положившись на который гитлеровская Германия сначала смогла добиться успеха, но и предопределившего дальнейший крах Вермахта и III-го Рейха</description>
         <pubDate>Sat, 13 Nov 2021 00:00:00 +0300</pubDate>
-    </item>
-    <item>
-        <title>Мои наблюдения. Белая радуга</title>
-        <link>https://astapm.github.io/nature/wrainbow.html</link>
-        <description>Наблюдение белой радуги в р-не д. Петровичи, Белоруссия</description>
-        <pubDate>Sun, 24 Oct 2021 00:00:00 +0300</pubDate>
     </item>
     </channel>
 </rss>
