@@ -5,8 +5,14 @@
        <link>https://astapm.github.io/</link>
        <description>Домашняя страница Михаила Астапчика. Статьи и эссе на темы религии, искусства, литературы, науки, техники, досуга</description>
        <copyright>CC0 1.0 Universal 2020-21, Mikhail Astapchyk</copyright>
-       <pubDate>Sat, 12 Feb 2022 22:26:15 +0300</pubDate>
-       <lastBuildDate>Sat, 12 Feb 2022 22:26:15 +0300</lastBuildDate>
+       <pubDate>Sun, 27 Feb 2022 21:30:47 +0300</pubDate>
+       <lastBuildDate>Sun, 27 Feb 2022 21:30:47 +0300</lastBuildDate>
+    <item>
+        <title>Две Украины: борщ и Бандера</title>
+        <link>https://astapm.github.io/vhistory/ukraina.html</link>
+        <description>Один из возможных планов военной спецоперации РФ на Украине</description>
+        <pubDate>Sun, 27 Feb 2022 00:00:00 +0300</pubDate>
+    </item>
     <item>
         <title>Мы не наблюдаем эволюцию коронавируса</title>
         <link>https://astapm.github.io/nature/corona.html</link>
@@ -30,12 +36,6 @@
         <link>https://astapm.github.io/nature/ardea.html</link>
         <description>Наблюдение белой цапли Ardea alba в д. Петровичи РБ осенью 2021 года</description>
         <pubDate>Sun, 21 Nov 2021 00:00:00 +0300</pubDate>
-    </item>
-    <item>
-        <title>Факторы 22 июня 1941-го года</title>
-        <link>https://astapm.github.io/vhistory/june1941.html</link>
-        <description>Конспективно о скрытом предательстве в советском государстве как основном факторе начала Великой Отечественной войны, положившись на который гитлеровская Германия сначала смогла добиться успеха, но и предопределившего дальнейший крах Вермахта и III-го Рейха</description>
-        <pubDate>Sat, 13 Nov 2021 00:00:00 +0300</pubDate>
     </item>
     </channel>
 </rss>
